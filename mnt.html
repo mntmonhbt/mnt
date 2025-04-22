@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎶 My Favorite Music</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .song-card {
+      background: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .song-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .song-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .song-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .song-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    .audio-wrapper {
+      margin-top: 10px;
+      transform: scale(1.15);
+      transform-origin: center;
+    }
+
+    /* About section */
+    .about-artist {
+      margin-top: 50px;
+      background: #f1f3f5;
+      padding: 30px;
+      border-left: 6px solid #6c63ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .about-artist img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-artist-text {
+      flex: 1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .about-artist strong {
+      color: #6c63ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" data-aos="fade-up">
+    <h1>🎶 My Favorite Music</h1>
+
+   <div class="gallery">
+  <!-- Song 1 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="100">
+    <img src="song1.jpg" alt="Song 1 Cover">
+    <div class="song-content">
+      <div class="song-title">ONE MORE KISS - 113</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song1.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!-- Song 2 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="200">
+    <img src="song2.jpg" alt="Song 2 Cover">
+    <div class="song-content">
+      <div class="song-title">StarBoy - WEEKEND</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song2.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!-- Song 3 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="300">
+    <img src="song3.jpg" alt="Song 3 Cover">
+    <div class="song-content">
+      <div class="song-title">Goo - Sash</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song3.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!-- Song 4 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="400">
+    <img src="song4.jpg" alt="Song 4 Cover">
+    <div class="song-content">
+      <div class="song-title">Galt Tereg - Vandebo</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song4.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!-- Song 5 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="500">
+    <img src="song5.jpg" alt="Song 5 Cover">
+    <div class="song-content">
+      <div class="song-title">TOGLOOM BISH - Gangbay</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song5.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <!--  Song 6 -->
+  <div class="song-card" data-aos="fade-up" data-aos-delay="600">
+    <img src="song6.jpg" alt="Song 6 Cover">
+    <div class="song-content">
+      <div class="song-title">Before i go - THE C</div>
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="song6.m4a" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- About Artist Section -->
+    <div class="about-artist" data-aos="fade-up" data-aos-delay="600">
+      <img src="artist.jpg" alt="Favorite Artist">
+      <div class="about-artist-text">
+        <h2>🎤 113 My Favorite Artist</h2>
+        <p>
+        113 is one of the prominent figures in Mongolia’s hip-hop scene. He is known for blending modern hip-hop and trap styles with elements of Mongolian culture, language, and mindset, creating a unique and powerful sound.
+His popular tracks such as “Not Yet”, “G SHAQ U”, “HONH”, “4 ZUG”, and “Uhliin Toirog” have gained significant recognition among Mongolian youth and attracted widespread attention on platforms like YouTube and SoundCloud. Collaborative works like “URA” also showcase his versatility and artistic range.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
